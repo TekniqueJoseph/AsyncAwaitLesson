@@ -8,3 +8,66 @@ body{
 h1{
     text-align: center;
 }
+h1:hover{
+    cursor: pointer;
+    color: mediumseagreen;
+
+}
+.menubar{
+    grid-area: 1/1/2/3;
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,fr);
+    grid-template-rows: 100px, auto, 200px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+li{
+    padding: 10px 25px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+}
+li:hover{
+    cursor: pointer;
+    background:indigo;
+    color: aliceblue;
+}
+.main{
+    margin-top: 100px;
+    grid-area: 2/1/3/3;
+    text-align: center;
+}
+img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    transition: transform 1500ms ease-in-out;
+    /* transition: <property> <duration> <timing-function> <delay>; */
+    box-shadow: 3px 2px 15px 5px darkblue;
+}
+img:hover {
+    cursor: pointer;
+    transform: rotate(720deg);
+  }
+.bottom{
+    margin-top: 100px;
+    grid-column:1/3 ;
+    text-align: center;
+}
+button{
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+}
+
